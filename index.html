@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>
+  Formulir Pendaftaran
+ </title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Formulir Pendaftaran</h1>
+ <h2> Pekan Olahraga dan Seni Guru TKA/TPA Tahun 2020</h2>
+
+ <form id="form">
+
+  <div class="form-control">
+   <label for="name" id="label-name">
+    Nama Peserta
+   </label>
+   <input type="text" id="name" placeholder="Tulis Nama Disini" />
+  </div>
+
+  <div class="form-control">
+   <label for="tempat" id="label-tempat">
+    Tempat Lahir
+   </label>
+   <input type="text" id="tempat" placeholder="Tulis Tempat Lahir Disini" />
+  </div>
+
+  <div class="form-control">
+    <label for="tanggal" id="label-tanggal">
+      Tanggal Lahir
+    </label>
+    <input type="date" id="tanggal" name="Tanggal Lahir">
+  </div>
+
+  <div class="form-control">
+   <label for="utusan" id="label-utusan">
+    Utusan Unit TKA/TPA
+   </label>
+   <input type="text" id="utusan" placeholder="Tulis Utusan Disini" />
+  </div>
+
+  <div class="form-control">
+    <label for="kelurahan" id="label-kelurahan">
+     Kelurahan/Desa
+    </label>
+    <input type="text" id="kelurahan" placeholder="Tulis Kelurahan/Desa Disini" />
+   </div>
+
+  <div class="form-control">
+    <label for="kecamatan" id="label-kecamatan">
+     Kecamatan
+    </label>
+    <input type="text" id="kecamatan" placeholder="Tulis Kecamatan Disini" />
+   </div>
+
+  <div class="form-control">
+    <label for="notel" id="label-notel">
+     Nomor Telepon
+    </label>
+    <input type="text" id="notel" placeholder="Tulis Nomor Telepon Disini" />
+   </div>
+
+   <div class="form-control">
+    <label>Jenis Lomba
+        <small> (Pilih jenis lomba yang ingin diikuti)</small>
+    </label>
+    <label for="inp-1">
+        <input type="checkbox"
+               name="inp">Tarik Tambang</input></label>
+    <label for="inp-2">
+        <input type="checkbox"
+               name="inp">Lari Estafet</input></label>
+    <label for="inp-3">
+        <input type="checkbox"
+               name="inp">Gobak Sodor</input></label>
+    <label for="inp-4">
+        <input type="checkbox"
+               name="inp">Tartil</input></label>
+    <label for="inp-5">
+        <input type="checkbox"
+               name="inp">Ceramah</input></label>
+</div>
+
+  <button type="submit" value="submit" onclick="submit()">
+   Submit
+  </button>
+
+ </form>
+
+<script type="text/javascript" src="script.js">
+  document.getElementById("submit").addEventListener("click", function (event) {
+  event.preventDefault();
+});
+</script>
+
+</body>
+</html>
